@@ -16,7 +16,7 @@
 
 body {
 	font-family: 'Josefin Sans';
-	background-color: rgb(202, 79, 79);
+	background-color: rgb(87, 87, 87);
 	overflow-x: hidden;
 }
 
@@ -75,40 +75,37 @@ nav {
 	background-position: 0px -130px;
 	background-repeat: no-repeat;
 	background-size:cover;
-
+	position: relative;
 
 	/* box modeling */
 	padding: 50px 20px;
 	margin-bottom: 20px;
 }
 
-.cine h4, .cine p, .introduccion h2, p, h3{
+.cine h3, .introduccion h2, p, h3{
 	font-size: larger;
 	padding: 10px 20px;
 }
 
-.cine h4{
+.cine h3{
 	text-align: justify ;
-	padding-top: 40px;
+	padding-top: 50px;
+	font-size: 40px;
 }
 
-/* intento de hacer que la imagen quede con el texto pegado a la derecha */
+.indicacion{
+	text-align:center
+}
 
 .asiento {
-	display:flex;
-	
 	background-image: url("../imagenes/Asiento.png");
 
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center;
-	
-	text-align: center;
 }
-.asientoTexto{
-	text-align:center;
-}
+
 .cine p, .introduccion{
 	text-align: justify;
 }
