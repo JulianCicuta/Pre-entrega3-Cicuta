@@ -82,7 +82,7 @@ nav {
 	margin-bottom: 20px;
 }
 
-.cine h3, .introduccion h2, p, h3{
+.cine h3{
 	font-size: larger;
 	padding: 10px 20px;
 }
@@ -110,9 +110,26 @@ nav {
 	text-align: justify;
 }
 
+main.introduccion{
+    font-family: Anotherday;
+	display: flex; 
+	align-self: center;
+	height: 10em;
+  	flex-wrap: wrap; 
+  	align-content: stretch;
+  background-color:#eee;
+
+	p, li { 
+	display: flex;
+	align-self: center;
+	width:fit-content;
+	border: black 1px solid;
+	margin: 2px; 
+	
+}}
+
 .piepagina{
 	/* Definir un alto específico */
 	height: 400px;
     position: absolute;
-
 }
