@@ -1,100 +1,69 @@
 * {
-	margin: 0;
-	padding: 0;
-}
-
-/* regla para usar una font descargada a la pc */
-@font-face {
-	font-family: 'AnotherDay';
-	src: url('../assets/font/AnotherDay.ttf');
+	margin: 0px;
+	padding: 0px;
 }
 
 @font-face {
-	font-family: 'Amstagram';
-	src: url('../assets/font/Amstagram.ttf');
+	font-family: 'Relevance';
+	src: url('../fonts/Relevance.ttf');
+}
+
+@font-face {
+	font-family: 'JUST_Sans';
+	src: url(../fonts/JUST_Sans.otf);
 }
 
 body {
-	font-family: 'Josefin Sans';
-	background-color: rgb(87, 87, 87);
-	overflow-x: hidden;
+	font-family: 'Relevance';
+	background-color: rgb(109, 0, 0);
+	max-width:fit-content;
 }
 
 h2{
-	font-family: 'Amstagram';
+	font-family: 'Relevance';
 }
 
-a {
+
+nav .menu, a{
+	font-family: Relevance;
 	color: rgb(255, 0, 0);
-	font-weight: 600;
-	text-decoration: none;
-	font-size: 1.2rem;
-	line-height: 2rem;
-}
-
-.cabecera {
-	background-color: cornsilk;
-	position: sticky;
-	top: 0px;
-}
-
-.cabecera img {
-	padding: 20px;
-}
-
-nav {
-	position: relative;
-	bottom: 70px;
-	left: 1200px;
-}
-
-.menu li {
-	display: inline;
-	width: 5%;
-	position: relative;
-	left: -230px;
-}
-
-.submenu li{
-	display:table;
-	position: relative;
-	left: -95px;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 
-/* parallax */
-
-.cabecera{
+header.cabecera{
 	/* Imagen elegida */
-	background-image: url("../imagenes/CINE\ XXI.png");
+	background-image: url("../imagenes/image.png");
 
 	/* Definir un alto específico */
-	height: 200px;
+	height: 150px;
 
 	/* Crear el efecto  al scrollear */
-	background-position: 0px -130px;
+	background-color: white;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size:cover;
-	position: relative;
-
-	/* box modeling */
-	padding: 50px 20px;
-	margin-bottom: 20px;
+	background-size:contain;
 }
 
-.cine h3{
+.cine{
+	color: white;
 	font-size: larger;
-	padding: 10px 20px;
-}
-
-.cine h3{
+	padding: 20px 25px;
+	font-family: Just_sans ;
+	h3{
 	text-align: justify ;
-	padding-top: 50px;
-	font-size: 40px;
+	font-size: 50px;
+	}
 }
 
 .indicacion{
-	text-align:center
+	color: white;
+	font-style: italic;
+	font-size: 20px;
+	text-align:center;
+	font-family: Just_sans;
 }
 
 .asiento {
@@ -111,25 +80,18 @@ nav {
 }
 
 main.introduccion{
-    font-family: Anotherday;
-	display: flex; 
-	align-self: center;
-	height: 10em;
-  	flex-wrap: wrap; 
-  	align-content: stretch;
-  background-color:#eee;
+    font-family: JUST_Sans;
+	display: grid;
+	grid-template-columns: auto auto;
+	border: red;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10%;
+	bottom: 10%;
+	text-align: justify;
+	align-items: center;
+	color: white;
 
-	p, li { 
-	display: flex;
-	align-self: center;
-	width:fit-content;
-	border: black 1px solid;
-	margin: 2px; 
-	
-}}
-
-.piepagina{
-	/* Definir un alto específico */
-	height: 400px;
-    position: absolute;
 }
+
+/*.piepagina{*/
