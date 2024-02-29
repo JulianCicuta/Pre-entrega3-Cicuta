@@ -16,7 +16,7 @@
 body {
 	font-family: 'Relevance';
 	background-color: rgb(109, 0, 0);
-	max-width:fit-content;
+
 }
 
 h2{
@@ -95,3 +95,8 @@ main.introduccion{
 }
 
 /*.piepagina{*/
+
+footer.piepagina{
+	display: flex;
+	flex-direction:column;
+}
