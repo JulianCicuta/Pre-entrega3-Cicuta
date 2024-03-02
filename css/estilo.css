@@ -19,11 +19,6 @@ body {
 
 }
 
-h2{
-	font-family: 'Relevance';
-}
-
-
 nav .menu, a{
 	font-family: Relevance;
 	color: rgb(255, 0, 0);
@@ -47,6 +42,8 @@ header.cabecera{
 	background-size:contain;
 }
 
+/*Index.html*/
+
 .cine{
 	color: white;
 	font-size: larger;
@@ -55,6 +52,9 @@ header.cabecera{
 	h3{
 	text-align: justify ;
 	font-size: 50px;
+	}
+	p{
+	text-align: justify;
 	}
 }
 
@@ -75,38 +75,47 @@ header.cabecera{
 	background-position: center;
 }
 
-.cine p, .introduccion{
-	text-align: justify;
-}
+
+/* Proyecto.html*/
 
 main.introduccion{
-    font-family: JUST_Sans;
 	display: grid;
 	grid-template-columns: auto auto;
 	border: red;
-	width: 80%;
-	margin: 0 auto;
-	padding: 10%;
-	bottom: 10%;
+	width: 90%;
+	padding: 100px;
 	text-align: justify;
 	align-items: center;
-	color: white;
 
-}
+	h2{
+		font-family: 'Relevance';
+		font-size: 30px;
+		color: white;
+		padding: 20px;
+	}
+	p{
+		font-family: 'JUST_Sans';
+		font-size: 25px;
+		color: white;
+
+}}
 
 /*.piepagina{*/
 
-footer.piepagina{
-	display: flex;
-	flex-direction:column;
+.piepagina{
+	background-image: url("../imagenes/CINE\ XXI.png");
+
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
 }
 
-/* Proyecto html */
+/* Contacto.html */
 
 section.contacto, h1{ 
 	font-family: 'Relevance';
 	font-size: 30px;
-	padding: 10px;
 	color: white;
 }
 		h5{
@@ -129,3 +138,35 @@ section.contacto, h1{
 			font-size: 25px;
 			display: flex;
 		}
+
+/* Historia.html */
+
+section.historia{
+	margin: 10px;
+	padding: 10px;
+
+	p{
+		font-size: 25px;
+		font-family: 'JUST_Sans';
+		color: white;
+		text-align:justify;
+	}
+}
+
+/* Objetivos.html */
+
+div.objetivos, h1{
+
+	font-family: 'Relevance';
+	padding: 10px;
+	font-size: 30px;
+
+	p{
+		font-family: 'JUST_Sans';
+		margin: 10px;
+		text-align: justify;
+		font-size: 25px;
+		color: white;
+	}
+
+}
