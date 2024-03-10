@@ -1,0 +1,66 @@
+@import "../diseño/tipografia.scss";
+
+/*Index.html*/
+
+.cine{
+	color: white;
+	font-size: larger;
+	padding: 2px 5px;
+	font-family: "Relevance" ;
+
+	h3{
+	text-align: justify ;
+	font-size: 16px;
+	}
+
+	p{
+	text-align: justify;
+    font-size: 10px;
+    font-weight: 400;
+	
+}}
+
+.indicacion{
+	color: white;
+	font-style: italic;
+	font-size: 9px;
+	text-align:center;
+	font-family: "Relevance";
+}
+
+.asiento {
+	background-image: url("../imagenes/Asiento.png");
+
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+}
+
+/* Proyecto.html*/
+
+main.introduccion{
+	display: grid;
+	grid-template-columns: 170px 1fr;
+	border: red;
+	padding: 10px;
+	text-align: justify;
+	align-items: center;
+
+    img{
+    width: 170px;
+    height: 120px;
+    }
+
+	h2{
+		font-family: 'Relevance';
+		font-size: 10px;
+		color: white;
+		padding: 5px;
+	}
+	p{
+		font-family: 'JUST_Sans';
+		font-size: 15px;
+		color: white;
+
+}}

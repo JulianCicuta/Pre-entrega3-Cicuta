@@ -28,19 +28,6 @@ nav .menu, a{
 }
 
 
-header.cabecera{
-	/* Imagen elegida */
-	background-image: url("../imagenes/image.png");
-
-	/* Definir un alto específico */
-	height: 100px;
-
-	/* Crear el efecto  al scrollear */
-	background-color: white;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:contain;
-}
 
 /*Index.html*/
 

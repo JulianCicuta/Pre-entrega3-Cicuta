@@ -1,0 +1,29 @@
+@import '../diseño/tipografia.scss';
+
+header.cabecera{
+	/* Imagen elegida */
+	background-image: url("../imagenes/image.png");
+
+	/* Definir un alto específico */
+	height: 75px;
+
+	/* Crear el efecto  al scrollear */
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+nav .menu, a{
+	font-family: "Relevance";
+	color: rgb(255, 0, 0);
+	font-size: 16px;
+	display: flex;
+	justify-content: space-around;
+}
+
+body {
+	font-family: "Relevance";
+	background-color: rgb(109, 0, 0);
+
+}
