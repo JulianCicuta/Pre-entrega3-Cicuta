@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/dise%C3%B1o/tipografia.scss","../../scss/estructura/header.scss"],"names":[],"mappings":";AAAA;EACC;EACA;;AAGD;EACC;EACA;;ACLD;AACC;EACA;AAEA;EACA;AAEA;EACA;EACA;EACA;EACA;;;AAGD;EACC;EACA;EACA;EACA;EACA;;;AAGD;EACC;EACA","file":"header.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/estructura/header.scss"],"names":[],"mappings":";AAAA;AACC;EACA;AAEA;EACA;AAEA;EACA;EACA;EACA;EACA;;;AAID;EACC;EACA;EACA;;AACC;EACA;;AAEC;EAAG;EACH;EACA;;;AAKH;EACC;EACA","file":"header.css"}

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 @font-face {
   font-family: "Relevance";
   src: url("../fonts/Relevance.ttf");
@@ -7,6 +12,37 @@
   font-family: "Just_sans";
   src: url(../fonts/JUST_Sans.otf);
 }
+header.cabecera {
+  /* Imagen elegida */
+  background-image: url("../imagenes/image.png");
+  /* Definir un alto específico */
+  height: 75px;
+  /* Crear el efecto  al scrollear */
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  text-decoration: none;
+}
+ul a {
+  font-family: "Relevance";
+  color: rgb(255, 0, 0);
+  font-size: 13px;
+}
+
+body {
+  font-family: "Relevance";
+  background-color: rgb(109, 0, 0);
+}
+
 /*Index.html*/
 .cine {
   color: white;
@@ -59,56 +95,144 @@ main.introduccion h2 {
   color: white;
   padding: 5px;
 }
+main.introduccion h3 {
+  font-family: "Relevance";
+  font-size: 14px;
+  color: white;
+  padding-left: 10px;
+}
 main.introduccion p {
   font-family: "JUST_Sans";
-  font-size: 15px;
+  font-size: 12px;
+  color: white;
+  padding-left: 10px;
+}
+main.introduccion li {
+  font-family: "Just_sans";
+  font-size: 10px;
+  color: white;
+  padding-left: 10px;
+}
+
+/* Contacto.html */
+section.contacto, h1 {
+  font-family: "Relevance";
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+}
+
+h2 {
+  font-family: "JUST_Sans";
+  font-size: 12px;
+  padding: 10px;
+  text-align: justify;
+}
+
+form {
+  font-size: 10px;
+  font-family: "JUST_Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+input {
+  font-size: 10px;
+  display: flex;
+}
+
+.boton {
+  height: 30px;
+  width: 100px;
+}
+
+/* Historia.html */
+section.historia {
+  padding: 10px;
+}
+section.historia p {
+  font-size: 14px;
+  font-family: "JUST_Sans";
+  color: white;
+  text-align: justify;
+}
+
+/* Objetivos.html */
+div.objetivos, h1 {
+  font-family: "Relevance";
+  padding: 10px;
+  font-size: 14px;
+}
+div.objetivos li, h1 li {
+  color: white;
+}
+div.objetivos a, h1 a {
+  font-family: "JUST_Sans";
+  text-align: justify;
+  font-size: 10px;
   color: white;
 }
 
-@font-face {
-  font-family: "Relevance";
-  src: url("../fonts/Relevance.ttf");
-}
-@font-face {
-  font-family: "Just_sans";
-  src: url(../fonts/JUST_Sans.otf);
-}
-header.cabecera {
-  /* Imagen elegida */
-  background-image: url("../imagenes/image.png");
-  /* Definir un alto específico */
-  height: 75px;
-  /* Crear el efecto  al scrollear */
-  background-color: white;
-  background-position: center;
+.piepagina {
+  background-image: url("../imagenes/CINE XXI.png");
+  height: 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
-nav .menu, a {
-  font-family: "Relevance";
-  color: rgb(255, 0, 0);
-  font-size: 16px;
-  display: flex;
-  justify-content: space-around;
+/* Index.html media-query */
+.asiento {
+  height: 50%;
 }
 
-body {
-  font-family: "Relevance";
-  background-color: rgb(109, 0, 0);
+/* Proyecto.html media-query */
+@media (max-width: 480px) {
+  header.menu {
+    max-width: max-content;
+  }
+  nav .menu, a {
+    font-family: Relevance;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main.introduccion {
+    display: flex;
+    flex-direction: column;
+    font-family: "JUST_Sans";
+    font-size: 20px;
+    color: white;
+    padding: 5%;
+    text-align: justify;
+  }
 }
-
-@font-face {
-  font-family: "Relevance";
-  src: url("../fonts/Relevance.ttf");
-}
-@font-face {
-  font-family: "Just_sans";
-  src: url(../fonts/JUST_Sans.otf);
-}
-* {
-  margin: 0px;
-  padding: 0px;
+/*Contacto.html media-query*/
+@media (max-width: 480px) {
+  section.contacto, h1 {
+    font-family: "Relevance";
+    font-size: 10px;
+    color: white;
+  }
+  h5 {
+    font-family: "JUST_Sans";
+    font-size: 20px;
+  }
+  form {
+    font-size: 25px;
+    font-family: "JUST_Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  input {
+    font-size: 25px;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

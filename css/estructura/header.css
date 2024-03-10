@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Relevance";
-  src: url("../fonts/Relevance.ttf");
-}
-@font-face {
-  font-family: "Just_sans";
-  src: url(../fonts/JUST_Sans.otf);
-}
 header.cabecera {
   /* Imagen elegida */
   background-image: url("../imagenes/image.png");
@@ -19,12 +11,18 @@ header.cabecera {
   background-size: contain;
 }
 
-nav .menu, a {
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  text-decoration: none;
+}
+ul a {
   font-family: "Relevance";
   color: rgb(255, 0, 0);
-  font-size: 16px;
-  display: flex;
-  justify-content: space-around;
+  font-size: 13px;
 }
 
 body {

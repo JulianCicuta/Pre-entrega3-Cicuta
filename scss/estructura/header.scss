@@ -1,5 +1,3 @@
-@import '../diseño/tipografia.scss';
-
 header.cabecera{
 	/* Imagen elegida */
 	background-image: url("../imagenes/image.png");
@@ -14,12 +12,19 @@ header.cabecera{
 	background-size:contain;
 }
 
-nav .menu, a{
-	font-family: "Relevance";
-	color: rgb(255, 0, 0);
-	font-size: 16px;
+
+ul{
+	list-style: none;		
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;	
+		li{
+		text-decoration: none;
+		}
+			a{	font-family: "Relevance";
+			color: rgb(255, 0, 0);
+			font-size: 13px;
+			}
+
 }
 
 body {

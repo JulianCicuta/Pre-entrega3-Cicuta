@@ -1,0 +1,66 @@
+/* Index.html media-query */
+
+.asiento{
+    height: 50%;
+}
+
+
+
+
+
+/* Proyecto.html media-query */
+@media (max-width: 480px) {
+	header.menu{
+		max-width:max-content
+	}
+
+	nav .menu, a{
+		font-family: Relevance;
+		color: rgb(255, 0, 0);
+		font-size: 15px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+
+	main.introduccion{
+		display: flex;
+		flex-direction: column;
+		font-family: 'JUST_Sans';
+		font-size: 20px;
+		color: white;
+		padding: 5%;
+		text-align: justify;
+}}
+
+/*Contacto.html media-query*/
+
+@media (max-width: 480px){
+
+section.contacto, h1{ 
+		font-family: 'Relevance';
+		font-size: 10px;
+		color: white;
+	}
+			h5{
+				font-family: 'JUST_Sans';
+				font-size: 20px
+			}
+	
+			form{
+				font-size: 25px;
+				font-family: 'JUST_Sans';
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				box-sizing: border-box;
+	
+			}
+			
+			input{
+				font-size: 25px;
+				display: flex;
+			}
+
+
+}
