@@ -35,35 +35,36 @@ ul li {
 ul a {
   font-family: "Relevance";
   color: rgb(255, 0, 0);
-  font-size: 13px;
+  font-size: 100%;
 }
 
 body {
   font-family: "Relevance";
-  background-color: rgb(109, 0, 0);
+  background: rgb(23, 0, 0);
+  background: linear-gradient(90deg, rgb(23, 0, 0) 0%, rgb(66, 0, 0) 35%, rgb(134, 0, 0) 100%);
 }
 
 /*Index.html*/
 .cine {
   color: white;
-  font-size: larger;
   padding: 2px 5px;
   font-family: "Relevance";
 }
 .cine h3 {
-  text-align: justify;
-  font-size: 16px;
+  margin: 2% 2%;
+  font-size: 100%;
 }
 .cine p {
+  margin: 0 2%;
+  font-size: 100%;
   text-align: justify;
-  font-size: 10px;
-  font-weight: 400;
+  padding-bottom: 2%;
 }
 
-.indicacion {
+.indicacion p {
   color: white;
   font-style: italic;
-  font-size: 9px;
+  font-size: 80%;
   text-align: center;
   font-family: "Relevance";
 }
@@ -79,67 +80,75 @@ body {
 /* Proyecto.html*/
 main.introduccion {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 25% 1fr;
   border: red;
   padding: 10px;
   text-align: justify;
   align-items: center;
 }
 main.introduccion img {
-  width: 170px;
-  height: 120px;
+  width: 100%;
+  height: 80%;
+}
+main.introduccion h1 {
+  font-family: "Relevance";
+  margin: 0 2%;
+  font-size: 150%;
+  width: 90%;
+  max-width: 1200px;
+  text-align: left;
+  color: white;
 }
 main.introduccion h2 {
   font-family: "Relevance";
-  font-size: 10px;
+  margin: 0 2%;
+  width: 90%;
+  max-width: 1200px;
   color: white;
-  padding: 5px;
-}
-main.introduccion h3 {
-  font-family: "Relevance";
-  font-size: 14px;
-  color: white;
-  padding-left: 10px;
 }
 main.introduccion p {
   font-family: "JUST_Sans";
-  font-size: 12px;
+  margin: 0 2%;
+  width: 90%;
+  max-width: 1200px;
   color: white;
-  padding-left: 10px;
 }
 main.introduccion li {
   font-family: "Just_sans";
-  font-size: 10px;
+  margin: 0 2%;
+  width: 90%;
+  max-width: 1200px;
   color: white;
-  padding-left: 10px;
 }
 
 /* Contacto.html */
-section.contacto, h1 {
+section h1 {
   font-family: "Relevance";
-  font-size: 16px;
+  font-size: 100%;
   color: white;
-  padding: 5px;
+  margin: 0 2%;
 }
 
 h2 {
   font-family: "JUST_Sans";
-  font-size: 12px;
-  padding: 10px;
+  font-size: 100%;
+  margin: 0 2%;
   text-align: justify;
+  color: white;
 }
 
 form {
-  font-size: 10px;
+  font-size: 100%;
   font-family: "JUST_Sans";
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  color: white;
 }
 
 input {
-  font-size: 10px;
+  font-size: 100%;
   display: flex;
 }
 
@@ -163,16 +172,13 @@ section.historia p {
 div.objetivos, h1 {
   font-family: "Relevance";
   padding: 10px;
-  font-size: 14px;
+  font-size: 120%;
+  color: white;
 }
 div.objetivos li, h1 li {
+  font-size: 100%;
   color: white;
-}
-div.objetivos a, h1 a {
-  font-family: "JUST_Sans";
-  text-align: justify;
-  font-size: 10px;
-  color: white;
+  text-decoration: none;
 }
 
 .piepagina {
@@ -184,22 +190,15 @@ div.objetivos a, h1 a {
 }
 
 /* Index.html media-query */
-.asiento {
-  height: 50%;
-}
-
-/* Proyecto.html media-query */
 @media (max-width: 480px) {
-  header.menu {
-    max-width: max-content;
+  .cine, p {
+    text-align: justify;
+    padding-bottom: 5%;
   }
-  nav .menu, a {
-    font-family: Relevance;
-    color: rgb(255, 0, 0);
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
+  .asiento {
+    height: 50%;
   }
+  /* Proyecto.html media-query */
   main.introduccion {
     display: flex;
     flex-direction: column;
@@ -209,20 +208,36 @@ div.objetivos a, h1 a {
     padding: 5%;
     text-align: justify;
   }
-}
-/*Contacto.html media-query*/
-@media (max-width: 480px) {
-  section.contacto, h1 {
+  main.introduccion h1 {
+    text-align: center;
+  }
+  main.introduccion p {
+    padding-top: 5%;
+  }
+  main.introduccion li {
+    list-style: circle;
+    text-decoration: none;
+    text-align: left;
+    padding-bottom: 2%;
+  }
+  /*Contacto.html media-query*/
+  .contacto h1 {
     font-family: "Relevance";
-    font-size: 10px;
+    font-size: 150%;
+    margin: 0 2%;
     color: white;
   }
-  h5 {
+  h2 {
     font-family: "JUST_Sans";
-    font-size: 20px;
+    font-size: 100%;
+    margin: 0 2%;
+  }
+  h3 {
+    font-size: 100%;
   }
   form {
-    font-size: 25px;
+    font-size: 100%;
+    margin: 0 2%;
     font-family: "JUST_Sans";
     display: flex;
     flex-direction: column;
@@ -230,8 +245,12 @@ div.objetivos a, h1 a {
     box-sizing: border-box;
   }
   input {
-    font-size: 25px;
+    font-size: 100%;
+    margin: 0 2%;
     display: flex;
+  }
+  textarea {
+    font-size: 80%;
   }
 }
 

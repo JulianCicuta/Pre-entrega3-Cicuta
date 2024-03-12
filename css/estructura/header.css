@@ -22,12 +22,13 @@ ul li {
 ul a {
   font-family: "Relevance";
   color: rgb(255, 0, 0);
-  font-size: 13px;
+  font-size: 100%;
 }
 
 body {
   font-family: "Relevance";
-  background-color: rgb(109, 0, 0);
+  background: rgb(23, 0, 0);
+  background: linear-gradient(90deg, rgb(23, 0, 0) 0%, rgb(66, 0, 0) 35%, rgb(134, 0, 0) 100%);
 }
 
 /*# sourceMappingURL=header.css.map */

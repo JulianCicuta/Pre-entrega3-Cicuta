@@ -1,4 +1,12 @@
 /* Index.html media-query */
+@media (max-width: 480px) {
+
+.cine, p{
+	text-align: justify;
+	padding-bottom: 5%;
+
+}
+
 
 .asiento{
     height: 50%;
@@ -6,24 +14,10 @@
 
 
 
-
-
 /* Proyecto.html media-query */
-@media (max-width: 480px) {
-	header.menu{
-		max-width:max-content
-	}
 
-	nav .menu, a{
-		font-family: Relevance;
-		color: rgb(255, 0, 0);
-		font-size: 15px;
-		display: flex;
-		justify-content: space-between;
-	}
-	
 
-	main.introduccion{
+main.introduccion{
 		display: flex;
 		flex-direction: column;
 		font-family: 'JUST_Sans';
@@ -31,24 +25,44 @@
 		color: white;
 		padding: 5%;
 		text-align: justify;
-}}
+
+	h1{
+		text-align: center;
+	}
+
+	p{
+		padding-top: 5%;
+	}
+
+	li{
+		list-style:circle ;
+		text-decoration: none;
+		text-align: left;
+		padding-bottom: 2%;
+	}
+}
 
 /*Contacto.html media-query*/
 
-@media (max-width: 480px){
-
-section.contacto, h1{ 
+.contacto h1{ 
 		font-family: 'Relevance';
-		font-size: 10px;
+		font-size: 150%;
+		margin: 0 2%;
 		color: white;
 	}
-			h5{
+			h2{
 				font-family: 'JUST_Sans';
-				font-size: 20px
+				font-size: 100%;
+				margin: 0 2%;
+			}
+
+			h3{
+				font-size: 100%;
 			}
 	
 			form{
-				font-size: 25px;
+				font-size: 100%;
+				margin: 0 2%;
 				font-family: 'JUST_Sans';
 				display: flex;
 				flex-direction: column;
@@ -58,8 +72,13 @@ section.contacto, h1{
 			}
 			
 			input{
-				font-size: 25px;
+				font-size: 100%;
+				margin: 0 2%;
 				display: flex;
+			}
+
+			textarea{
+				font-size: 80%;
 			}
 
 

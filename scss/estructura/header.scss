@@ -14,7 +14,7 @@ header.cabecera{
 
 
 ul{
-	list-style: none;		
+	list-style: none;	
 	display: flex;
 	justify-content: space-evenly;	
 		li{
@@ -22,13 +22,14 @@ ul{
 		}
 			a{	font-family: "Relevance";
 			color: rgb(255, 0, 0);
-			font-size: 13px;
+			font-size: 100%;
 			}
 
 }
 
 body {
 	font-family: "Relevance";
-	background-color: rgb(109, 0, 0);
+	background: rgb(23,0,0);
+	background: linear-gradient(90deg, rgba(23,0,0,1) 0%, rgba(66,0,0,1) 35%, rgba(134,0,0,1) 100%);
 
 }
